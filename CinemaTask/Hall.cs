@@ -12,7 +12,7 @@ namespace CinemaTask
         public string Name { get; set; }
         public int Row;
         public int Column;
-        public int[,] Place;
+        public bool[,] Place;
         public Cinema Cinema { get; set; }
         public Hall(int id, string name, int row, int column, Cinema cinema)
         {
@@ -20,13 +20,13 @@ namespace CinemaTask
             Name = name;
             Row = row;
             Column = column;
-            Place = new int[row, column];
+            Place = new bool[row, column];
             Cinema = cinema;
         }
 
         public void OrderTicket(int id, string name, string lastName, string startTime, string endTime, int row, int column)
         {
-            if (Place[row, column] == 1)
+            if (Place[row, column] == true)
             {
                 Console.WriteLine("Bu yer artıq tutulmuşdur");
             }
