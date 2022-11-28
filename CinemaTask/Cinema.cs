@@ -15,6 +15,5 @@ namespace CinemaTask
             Id = id;
             Name = name;
         }
-        public Hall[] Halls;
     }
 }

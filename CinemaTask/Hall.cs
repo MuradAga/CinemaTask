@@ -13,15 +13,13 @@ namespace CinemaTask
         public int Row;
         public int Column;
         public bool[,] Place;
-        public Cinema Cinema { get; set; }
-        public Hall(int id, string name, int row, int column, Cinema cinema)
+        public Hall(int id, string name, int row, int column)
         {
             Id = id;
             Name = name;
             Row = row;
             Column = column;
             Place = new bool[row, column];
-            Cinema = cinema;
         }
 
         public void OrderTicket(int id, string name, string lastName, string startTime, string endTime, int row, int column)
