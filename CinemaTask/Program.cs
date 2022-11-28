@@ -19,7 +19,17 @@ namespace CinemaTask
 
             hall1.Place[3, 4] = true; // dolu
             hall1.Place[6, 5] = true; // dolu
-
+            /*afadfad
+             * g
+             * adg
+             * ad
+             * g
+             * ad
+             * g
+             * da
+             * g
+             * d
+             */
             hall1.OrderTicket(14314, "Murad", "Agazade", "20:00", "22:00", 6, 5);
 
         }
