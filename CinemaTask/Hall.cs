@@ -12,7 +12,7 @@ namespace CinemaTask
         public string Name { get; set; }
         public int Row;
         public int Column;
-        public int[,] Place { get; set; }
+        public int[,] Place;
         public Cinema Cinema { get; set; }
         public Hall(int id, string name, int row, int column, Cinema cinema)
         {
