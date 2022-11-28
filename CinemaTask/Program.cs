@@ -31,7 +31,6 @@ namespace CinemaTask
              * d
              */
             hall1.OrderTicket(14314, "Murad", "Agazade", "20:00", "22:00", 6, 5);
-
         }
     }
 }
